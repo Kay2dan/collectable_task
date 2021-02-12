@@ -1,0 +1,55 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+@import "bulma";
+
+.regionLike {
+  background-color: #c3f7fe;
+  height: 100vh;
+}
+.regionHolder {
+  background-color: #fcf7f8;
+  height: 100vh;
+}
+.regionDisLike {
+  background-color: #fcd9dc;
+  height: 100vh;
+}
+
+/********************
+* Card
+*********************/
+.cardParent {
+  display: flex;
+  flex-direction: column;
+  &.cardSmall img.cardImg {
+    height: 320px;
+  }
+  img.cardImg {
+    height: 480px;
+    object-fit: contain;
+  }
+}
+
+.controls {
+  text-align: center;
+}
+
+.button {
+  border-radius: 50px;
+}
+
+div.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: gold;
+
+  .row {
+    .field {
+      display: inline-block;
+    }
+  }
+}
